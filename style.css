@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/467/stars.jpg);
+  overflow: hidden;
+}
+
+.dial {
+  background: linear-gradient(120deg, #CA4300, #C29400, #00CF31, #5FC7E6 60%);
+  background-size: 100% 1000%;
+  top: 50vh;
+  transform: translateY(-50%);
+  animation: dial 10s ease-in-out;
+  border-radius: 100%;
+  width: calc(15% + 200px);
+  max-width: 80%;
+  box-shadow: 0 0 5vw #000;
+  position: relative;
+  z-index: 1;
+}
+.dial-darks {
+  opacity: 0.6;
+}
+.dial-two {
+  fill: #fff;
+}
+.dial-marks {
+  opacity: 0.3;
+}
+.dial-marker {
+  transform-origin: 50% 50%;
+  transform: rotate(8deg);
+  animation: dial-marker-origin 1s ease-in, dial-marker 3s infinite alternate ease-in-out;
+}
+
+@keyframes dial {
+  from {
+    background-position: left;
+  }
+}
+@keyframes dial-marker-origin {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes dial-marker {
+  to {
+    transform: rotate(20deg);
+  }
+}
+.earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: 50% 50%;
+  width: 500vw;
+  height: 500vw;
+  border-radius: 100%;
+  background-color: #0092C6;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/467/earth.jpg);
+  background-position: center 0%;
+  background-size: 20%;
+  animation: earth 60s infinite linear;
+}
+.earth:after {
+  content: "";
+  position: absolute;
+  top: -5vw;
+  left: -5vw;
+  right: -5vw;
+  bottom: 0;
+  border-radius: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0) 60%, white 69.3%, rgba(255, 255, 255, 0) 70%);
+}
+
+@keyframes earth {
+  from {
+    background-position: 50% -59.5%;
+  }
+}
