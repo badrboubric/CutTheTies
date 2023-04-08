@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
+    <title>Cut The Ties</title>
     <link rel="icon" type="image/png" sizes="658x658" href="assets/img/Logo.png">
     <link rel="icon" type="image/png" sizes="658x658" href="assets/img/Logo.png">
     <link rel="icon" type="image/png" sizes="658x658" href="assets/img/Logo.png">
@@ -14,23 +14,47 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <style>
     /* Target screens that are smaller than 768 pixels in width */
-    @media (max-width: 767px) {
-      /* Target screens that are in landscape mode */
-      @media (orientation: landscape) {
+    @media (orientation: landscape) {
         /* Apply styles to prevent the website from being used */
-        body {
-          display: none;
+        body{
+            border: 0px solid rgb(62,78,80)
         }
-        /* You can also display a message to inform the user */
-        #landscape-message {
-          display: block;
+        #website {
+            visibility: hidden;
+            display: none;
+
+        }
+        /* Display the message when in landscape mode */
+        .landscape-message {
+          visibility: visible;
+          z-index: 9999;
+          color: #573131;
+          margin: 0rem; /* Remove any margin around the paragraph */
+         padding: 7rem; /* Add padding to the paragraph */
+         font-size: 1.5rem; /* Set the font size */
+         line-height: 1.5; /* Set the line height */
+         text-align: center; /* Center the text */
         }
       }
-    }
+      @media (orientation: portrait) {
+        body{
+            border: 9px solid rgb(62,78,80)
+        }
+        /* Apply styles to prevent the website from being used */
+        #website {
+            visibility: visible;
+        }
+        /* Display the message when in landscape mode */
+        .landscape-message {
+          visibility: hidden;
+          display: none;
+        }
+      }
   </style>
 </head>
 
-<body style="background: url(&quot;assets/img/pat-back.svg&quot;), #ecfcef;background-size: 66px, auto;border-radius: 0;border: 9px solid rgb(62,78,80);max-height: 100vh;">
+<body style="background: url(&quot;assets/img/pat-back.svg&quot;), #ecfcef;background-size: 66px, auto;border-radius: 0;max-height: 100vh;">
+    <div id="website">
     <div style="background: #3e4e50;height: 12vh;border-right-width: 31px;width: 100%;margin-top: -6px;">
         <h1 style="text-align: center;font-size: 5vh;color: #ecfcef;padding-top: 12px;height: 6vh;">Cut The Ties</h1>
         <h1 style="text-align: center;color: rgb(236,252,239);font-size: 2vh;padding-top: 4px;">Our planet is in danger</h1>
@@ -57,10 +81,9 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    </div>
       <!-- Message to display when in landscape mode -->
-  <div id="landscape-message" style="display: none;">
-    <p>Please rotate your phone to portrait mode to view this website.</p>
-  </div>
+        <p class="landscape-message">Please use this website in portrait mode</p>
 </body>
 
 </html>
