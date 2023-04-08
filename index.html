@@ -12,6 +12,22 @@
     <link rel="icon" type="image/png" sizes="658x658" href="assets/img/Logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <style>
+    /* Target screens that are smaller than 768 pixels in width */
+    @media (max-width: 767px) {
+      /* Target screens that are in landscape mode */
+      @media (orientation: landscape) {
+        /* Apply styles to prevent the website from being used */
+        body {
+          display: none;
+        }
+        /* You can also display a message to inform the user */
+        #landscape-message {
+          display: block;
+        }
+      }
+    }
+  </style>
 </head>
 
 <body style="background: url(&quot;assets/img/pat-back.svg&quot;), #ecfcef;background-size: 66px, auto;border-radius: 0;border: 9px solid rgb(62,78,80);max-height: 100vh;">
@@ -41,6 +57,10 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+      <!-- Message to display when in landscape mode -->
+  <div id="landscape-message" style="display: none;">
+    <p>Please rotate your phone to portrait mode to view this website.</p>
+  </div>
 </body>
 
 </html>
