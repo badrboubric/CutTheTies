@@ -1,1 +1,0 @@
-[website](https://cuttheties.me)
