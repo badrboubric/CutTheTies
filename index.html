@@ -13,48 +13,47 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <style>
-    /* Target screens that are smaller than 768 pixels in width */
-    @media (orientation: landscape) {
-        /* Apply styles to prevent the website from being used */
-        body{
-            border: 0px solid rgb(62,78,80)
-        }
-        #website {
-            visibility: hidden;
-            display: none;
-
-        }
-        /* Display the message when in landscape mode */
-        .landscape-message {
-          visibility: visible;
-          z-index: 9999;
-          color: #573131;
-          margin: 0rem; /* Remove any margin around the paragraph */
-         padding: 7rem; /* Add padding to the paragraph */
-         font-size: 1.5rem; /* Set the font size */
-         line-height: 1.5; /* Set the line height */
-         text-align: center; /* Center the text */
-        }
-      }
-      @media (orientation: portrait) {
-        body{
-            border: 9px solid rgb(62,78,80)
-        }
-        /* Apply styles to prevent the website from being used */
-        #website {
-            visibility: visible;
-        }
-        /* Display the message when in landscape mode */
-        .landscape-message {
-          visibility: hidden;
-          display: none;
-        }
-      }
-  </style>
+        /* Target screens that are smaller than 768 pixels in width */
+        @media (orientation: landscape) {
+            /* Apply styles to prevent the website from being used */
+            body{
+                border: 0px solid rgb(62,78,80)
+            }
+            #website {
+                visibility: hidden;
+                display: none;
+    
+            }
+            /* Display the message when in landscape mode */
+            .landscape-message {
+              visibility: visible;
+              z-index: 9999;
+              color: #573131;
+              margin: 0rem; /* Remove any margin around the paragraph */
+             padding: 7rem; /* Add padding to the paragraph */
+             font-size: 1.5rem; /* Set the font size */
+             line-height: 1.5; /* Set the line height */
+             text-align: center; /* Center the text */
+            }
+          }
+          @media (orientation: portrait) {
+            body{
+                border: 9px solid rgb(62,78,80)
+            }
+            /* Apply styles to prevent the website from being used */
+            #website {
+                visibility: visible;
+            }
+            /* Display the message when in landscape mode */
+            .landscape-message {
+              visibility: hidden;
+              display: none;
+            }
+          }
+      </style>
 </head>
 
-<body style="background: url(&quot;assets/img/pat-back.svg&quot;), #ecfcef;background-size: 66px, auto;border-radius: 0;max-height: 100vh;">
-    <div id="website">
+<body style="background: url(&quot;assets/img/pat-back.svg&quot;), #ecfcef;background-size: 66px, auto;border-radius: 0;border: 9px solid rgb(62,78,80);max-height: 100vh;">
     <div style="background: #3e4e50;height: 12vh;border-right-width: 31px;width: 100%;margin-top: -6px;">
         <h1 style="text-align: center;font-size: 5vh;color: #ecfcef;padding-top: 12px;height: 6vh;">Cut The Ties</h1>
         <h1 style="text-align: center;color: rgb(236,252,239);font-size: 2vh;padding-top: 4px;">Our planet is in danger</h1>
@@ -64,11 +63,26 @@
     </div>
     <div class="carousel slide" data-bs-ride="false" id="carousel-1" style="height: 50vh;">
         <div class="carousel-inner" style="height: 50vh;">
-            <div class="carousel-item active" style="height: 100%;background: var(--bs-pink);"></div>
-            <div class="carousel-item" style="height: 100%;color: var(--bs-blue);background: var(--bs-blue);"></div>
-            <div class="carousel-item" style="height: 100%;background: var(--bs-yellow);"></div>
-            <div class="carousel-item" style="background: var(--bs-green);height: 100%;"></div>
-            <div class="carousel-item" style="background: var(--bs-danger);height: 100%;"></div>
+            <div class="carousel-item active" style="height: 100%;background: linear-gradient(rgba(0,0,0,0.83) 7%, rgba(0,0,0,0.44) 100%), url(&quot;assets/img/Foto%204.jpg&quot;) center / cover no-repeat, #1f151a;">
+                <h1 style="text-align: center;color: rgb(255,255,255);font-size: 4vh;padding-top: 2vh;">Research</h1>
+                <p style="color: rgb(255,255,255);font-size: 4.1vw;padding-top: 1vh;padding-right: 6vh;padding-bottom: 0vh;padding-left: 6vh;height: 70%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat, non dictum turpis pellentesque. Maecenas a eleifend odio.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat.</p>
+            </div>
+            <div class="carousel-item" style="height: 100%;background: linear-gradient(rgba(0,0,0,0.83) 7%, rgba(0,0,0,0.44) 100%), url(&quot;assets/img/Foto%20logo%202.jpg&quot;) center / cover no-repeat, #1f151a;">
+                <h1 style="text-align: center;color: rgb(255,255,255);font-size: 4vh;padding-top: 2vh;">Alumni</h1>
+                <p style="color: rgb(255,255,255);font-size: 4.1vw;padding-top: 1vh;padding-right: 6vh;padding-bottom: 0vh;padding-left: 6vh;height: 70%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat, non dictum turpis pellentesque. Maecenas a eleifend odio.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat.</p>
+            </div>
+            <div class="carousel-item" style="height: 100%;background: linear-gradient(rgba(0,0,0,0.83) 7%, rgba(0,0,0,0.44) 100%), url(&quot;assets/img/Van%20Action%20Photo_3.jpg&quot;) center / cover no-repeat, #1f151a;">
+                <h1 style="text-align: center;color: rgb(255,255,255);font-size: 4vh;padding-top: 2vh;">Study Assosiations</h1>
+                <p style="color: rgb(255,255,255);font-size: 4.1vw;padding-top: 1vh;padding-right: 6vh;padding-bottom: 0vh;padding-left: 6vh;height: 70%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat, non dictum turpis pellentesque. Maecenas a eleifend odio.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat.</p>
+            </div>
+            <div class="carousel-item" style="height: 100%;background: linear-gradient(rgba(0,0,0,0.83) 7%, rgba(0,0,0,0.07) 100%), url(&quot;assets/img/Foto%20logo%202.jpg&quot;) center / cover no-repeat, #1f151a;">
+                <h1 style="text-align: center;color: rgb(255,255,255);font-size: 4vh;padding-top: 2vh;">Teaching</h1>
+                <p style="color: rgb(255,255,255);font-size: 4.1vw;padding-top: 1vh;padding-right: 6vh;padding-bottom: 0vh;padding-left: 6vh;height: 70%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat, non dictum turpis pellentesque. Maecenas a eleifend odio.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat.</p>
+            </div>
+            <div class="carousel-item" style="height: 100%;background: linear-gradient(rgba(0,0,0,0.83) 7%, rgba(0,0,0,0.44) 100%), url(&quot;assets/img/Van%20Action%20Photo_3.jpg&quot;) center / cover no-repeat, #1f151a;">
+                <h1 style="text-align: center;color: rgb(255,255,255);font-size: 4vh;padding-top: 2vh;">Prizes</h1>
+                <p style="color: rgb(255,255,255);font-size: 4.1vw;padding-top: 1vh;padding-right: 6vh;padding-bottom: 0vh;padding-left: 6vh;height: 70%;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat, non dictum turpis pellentesque. Maecenas a eleifend odio.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor neque, a luctus ipsum. Vivamus molestie libero eget lectus feugiat.</p>
+            </div>
         </div>
         <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a></div>
         <ol class="carousel-indicators">
@@ -81,9 +95,8 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
-    </div>
-      <!-- Message to display when in landscape mode -->
-        <p class="landscape-message">Please use this website in portrait mode</p>
+    <!-- Message to display when in landscape mode -->
+    <p class="landscape-message">Please use this website in portrait mode</p>
 </body>
 
 </html>
