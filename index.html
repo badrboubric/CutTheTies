@@ -77,16 +77,11 @@
         >
           Want to help out?
         </h1>
-        <div id="survey-container">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSf0akTS-VzW-6nlDiprI-i3ZrLNxwXEDBWl4ERNMY9pPrAY4A/viewform?usp=sf_link"
-              frameborder="0"
-            ></iframe>
-          </div>
+
         <button
           class="btn btn-primary text-center"
-          data-bss-hover-animate="pulse"
           type="button"
+          onclick="openWebsite()"
           style="
             width: 86.5%;
             height: 50%;
@@ -189,7 +184,7 @@
             >
               <br />Multiple study associations are sponsored by the fossil fuel
               giants, Shell and/or ExxonMobil and in some cases organize
-              executions to sites of these companies.<br /><br />
+              excursions to sites of these companies.<br /><br />
             </p>
           </div>
           <div
@@ -209,17 +204,17 @@
               style="
                 text-align: center;
                 color: rgb(255, 255, 255);
-                font-size: 4vh;
+                font-size: 3vh;
                 padding-top: 2vh;
               "
             >
-              Teaching
+            Student theses and -projects at Shell and multiple Shell employees are invited for guest lectures
             </h1>
             <p
               style="
                 color: rgb(255, 255, 255);
                 font-size: 4.1vw;
-                padding-top: 1vh;
+                padding-top: 1.5vh;
                 padding-right: 6vh;
                 padding-bottom: 0vh;
                 padding-left: 6vh;
@@ -267,7 +262,7 @@
             >
               The UT Ambassador Network consists of more than 70 alumni and
               relations who fill leading positions in the corporate world,
-              governments, or Twente startups. Many of these alumni reportedly
+              governments, or Twente startups. Some of these ambassadors are working for or have worked for Shell, Fugro and RWE alumni reportedly
               are working or have worked foe Shell or ExxonMobil.
             </p>
           </div>
@@ -344,8 +339,7 @@
                 text-align: center;
               "
             >
-              Shell has funded the research of multiple PhD students at the UT
-              and collaborated with PhD students for their research.
+            Fossil fuel companies fund professor positions and many research projects
             </p>
           </div>
         </div>
@@ -399,6 +393,10 @@
           // Add close button to survey container
           container.appendChild(closeBtn);
         });
+
+        function openWebsite() {
+            window.open("https://actie.fossielvrij.nl/petitions/academische-besturen-moeten-alle-banden-met-de-fossiele-industrie-verbreken", "_blank");
+        }
       </script>
     </div>
     <!-- Message to display when in landscape mode -->
