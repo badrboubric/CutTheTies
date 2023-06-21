@@ -18,7 +18,10 @@
             <h1 style="text-align: center;color: rgb(236, 252, 239);font-size: 2vh;padding-top: 4px;"> Our planet is in danger </h1>
         </div>
         <div style="background: rgba(168, 188, 174, 0.32);height: 30vh;color: #bfd4c5;">
-            <h1 class="border rounded-0" style="text-align: center;color: rgb(62, 78, 80);font-size: 4vh;padding-top: 1vh;"> Want to help out? </h1><button class="btn btn-primary text-center" type="button" style="background: #3e4e50;font-size: 3vmax;font-family: arial;border-style: none;border-radius: 5vw;margin-left: 6.25%;margin-top: 2%;height: 50%;width: 40%;" id="survey-btn"> Sign the Petition! </button><button class="btn btn-primary text-center" type="button" style="width: 40%;height: 50%;margin-left: 6.25%;background: #3e4e50;font-size: 3vmax;font-family: arial;border-style: none;border-radius: 5vw;margin-top: 2%;text-align: center;" id="survey-btn-1"> Contact us</button>
+            <h1 class="border rounded-0" style="text-align: center;color: rgb(62, 78, 80);font-size: 4vh;padding-top: 1vh;"> Want to help out? </h1>
+            <button class="btn btn-primary text-center" type="button" style="background: #3e4e50;font-size: 3vmax;font-family: arial;border-style: none;border-radius: 5vw;margin-left: 6.25%;margin-top: 2%;height: 50%;width: 40%;" id="survey-btn"> Sign the Petition! </button>
+            <button class="btn btn-primary text-center" type="button" style="width: 40%;height: 50%;margin-left: 6.25%;background: #3e4e50;font-size: 3vmax;font-family: arial;border-style: none;border-radius: 5vw;margin-top: 2%;text-align: center;" id="survey-btn-1"> Contact us</button>
+
             <p style="color: rgb(62, 78, 80);font-size: 5vw;text-align: center;"> Please sign the petition! </p>
         </div>
         <div class="carousel slide" data-bs-ride="false" id="carousel-1" style="height: 50vh;">
@@ -58,6 +61,22 @@
                 <li data-bs-target="#carousel-1" data-bs-slide-to="5"></li>
             </ol>
         </div><script src="bootstrap/js/bootstrap.min.js"></script><script src="js/bs-init.js"></script><script>
+
+            // Function to open a URL in a new tab
+             function openInNewTab(url) {
+               var win = window.open(url, '_blank');
+              win.focus();
+                }
+
+            // Add click event listeners to the buttons
+            document.getElementById('survey-btn').addEventListener('click', function() {
+              openInNewTab('https://actie.fossielvrij.nl/petitions/academische-besturen-moeten-alle-banden-met-de-fossiele-industrie-verbreken');
+             });
+
+            document.getElementById('survey-btn-1').addEventListener('click', function() {
+          openInNewTab('mailto:climate-crisis.utwente@proton.me');
+         });     
+
         const btn = document.getElementById("survey-btn");
         const container = document.getElementById("survey-container");
 
