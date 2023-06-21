@@ -1,0 +1,95 @@
+/* Target screens that are smaller than 768 pixels in width */
+
+/* Apply styles to prevent the website from being used */
+
+@media (orientation: landscape) {
+  body {
+    border: 0px solid rgb(62,78,80);
+  }
+}
+
+@media (orientation: landscape) {
+  #website {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Display the message when in landscape mode */
+
+@media (orientation: landscape) {
+  .landscape-message {
+    visibility: visible;
+    z-index: 9999;
+    color: #573131;
+    margin: 0rem;
+    padding: 7rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    border: 9px solid rgb(62,78,80);
+  }
+}
+
+/* Apply styles to prevent the website from being used */
+
+@media (orientation: portrait) {
+  #website {
+    visibility: visible;
+  }
+}
+
+/* Display the message when in landscape mode */
+
+@media (orientation: portrait) {
+  .landscape-message {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+#survey-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  transition: all 0.5s ease;
+}
+
+#survey-container.open {
+  width: 95%;
+  height: 95%;
+}
+
+#survey-container iframe {
+  width: 95%;
+  height: 100%;
+  border: none;
+}
+
+#survey-container .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#survey-container .close-btn:hover {
+  color: #ccc;
+}
+
